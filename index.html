@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sushant.dev</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="navbar">
+    <div class="logo">Sushant.dev</div>
+    <nav>
+      <ul>
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero fade-in">
+    <div class="hero-content">
+      <h1>Hi, I'm Sushant 👋</h1>
+      <p>A Passionate Web Developer & AI Enthusiast</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about fade-in">
+    <h2>About Me</h2>
+    <p>
+      I’m a Computer Science student with a strong interest in web development, and modern technologies.
+      I enjoy transforming ideas into interactive experiences and constantly improving my skills through projects and learning.
+    </p>
+    <p>
+
+      </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="skills fade-in">
+    <h2>My Skills</h2>
+    <div class="skill-cards">
+      <div class="card">HTML5</div>
+      <div class="card">CSS3</div>
+      <div class="card">JavaScript</div>
+    
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects fade-in">
+    <h2>Featured Projects</h2>
+    <div class="project-cards">
+      <div class="card">
+        <h3>Weather App</h3>
+        <p>Displays real-time weather using API integration and a responsive UI.</p>
+      </div>
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website showcasing my skills, projects, and achievements.</p>
+      </div>
+      <div class="card">
+        <h3>AI Chatbot</h3>
+        <p>An intelligent chatbot built using Python and NLP techniques.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact fade-in">
+    <h2>Get In Touch</h2>
+    <p>
+      I’m always excited to connect with professionals, recruiters, and fellow students
+      passionate about technology. Whether you’re looking to collaborate on a project,
+      discuss ideas, or explore opportunities, feel free to reach out!
+    </p>
+
+    <div class="contact-details">
+      <div class="info">
+        <!-- fixed mailto -->
+        <p><strong>Email:</strong> <a href="mailto:sushantdhinda@gmail.com">sushantdhinda@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong>
+          <a href="https://www.linkedin.com/in/sushant-dhinda-1b8343275/" target="_blank" rel="noopener">
+
+            linkedin.com/in/sushant-dhinda-1b8343275
+          </a>
+        </p>
+        <p><strong>GitHub:</strong>
+          <a href="https://github.com/Sushant542004" target="_blank" rel="noopener">https://github.com/Sushant542004</a>
+        </p>
+      </div>
+
+      <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+        <!-- Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="d1dd751a-e464-4d4e-b3c6-4e89f65f2f8d">
+
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+        <!-- Optional custom fields -->
+        <input type="hidden" name="subject" value="New Message from Portfolio Website">
+        <input type="hidden" name="from_name" value="Portfolio Contact Form">
+
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Krushna | Designed with 💙</p>
+  </footer>
+
+  <!-- Success Modal (with animated check) -->
+  <div id="successModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="successTitle">
+    <div class="modal-content" role="document">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <!-- SVG check animation -->
+        <svg class="checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52" aria-hidden="true">
+          <circle class="checkmark-circle" cx="26" cy="26" r="25" fill="none"/>
+          <path class="checkmark-check" fill="none" d="M14 27l7 7 16-16"/>
+        </svg>
+        <h3 id="successTitle">Message sent!</h3>
+        <p>✅ Your message has been sent successfully.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error Modal -->
+  <div id="errorModal" class="modal" role="dialog" aria-hidden="true" aria-labelledby="errorTitle">
+    <div class="modal-content" role="document">
+      <button class="close-btn" aria-label="Close">&times;</button>
+      <div class="modal-body">
+        <h3 id="errorTitle">Oops — something went wrong</h3>
+        <p>❌ Failed to send message. Please try again.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
